@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Aninha ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0d0004, #260009, #4a0012);
+            color: white;
+            font-family: Georgia, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .coracao {
+            position: absolute;
+            color: #ff315d;
+            font-size: 25px;
+            animation: subir 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        .c1 { left: 10%; animation-delay: 1s; }
+        .c2 { left: 25%; animation-delay: 3s; }
+        .c3 { left: 75%; animation-delay: 0s; }
+        .c4 { left: 90%; animation-delay: 2s; }
+
+        @keyframes subir {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            100% {
+                bottom: 110%;
+                opacity: 0;
+                transform: translateX(40px) rotate(20deg);
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 60px 30px;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 80, 110, 0.4);
+            border-radius: 25px;
+            box-shadow: 0 0 50px rgba(255, 0, 60, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        .pequeno {
+            color: #ff8099;
+            font-size: 18px;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 65px;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px #ff315d;
+        }
+
+        h2 {
+            font-size: 42px;
+            color: #ff456d;
+            margin-bottom: 30px;
+            font-style: italic;
+            text-shadow: 0 0 15px #ff174f;
+        }
+
+        .linha {
+            width: 100px;
+            height: 2px;
+            background: #ff456d;
+            margin: 25px auto;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #f5dfe3;
+            margin-bottom: 15px;
+        }
+
+        .declaracao {
+            margin-top: 30px;
+            font-size: 30px;
+            color: #ff9aae;
+            font-style: italic;
+        }
+
+        .final {
+            margin-top: 35px;
+            color: #ff456d;
+            font-size: 18px;
+        }
+
+        .botao {
+            margin-top: 30px;
+            padding: 13px 28px;
+            border: 1px solid #ff456d;
+            border-radius: 30px;
+            background: transparent;
+            color: #ff8da2;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #ff315d;
+            color: white;
+            box-shadow: 0 0 25px #ff315d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Corações flutuando -->
+    <div class="coracao c1">❤️</div>
+    <div class="coracao c2">♡</div>
+    <div class="coracao c3">❤️</div>
+    <div class="coracao c4">♡</div>
+
+    <div class="container">
+
+        <div class="pequeno">
+            UM PEQUENO SITE FEITO COM AMOR
+        </div>
+
+        <h1>Olá, mundo!</h1>
+
+        <h2>Te amo, Aninha! ❤️</h2>
+
+        <div class="linha"></div>
+
+        <p>
+            Criei esse pequeno cantinho na internet
+            especialmente para você.
+        </p>
+
+        <p>
+            Talvez seja apenas um site,
+            mas cada palavra aqui foi feita pensando em você.
+        </p>
+
+        <p>
+            Obrigado por fazer parte da minha vida,
+            por todos os momentos, risadas e lembranças
+            que construímos juntos.
+        </p>
+
+        <div class="declaracao">
+            Você é muito especial para mim. ❤️
+        </div>
+
+        <button class="botao" onclick="mensagem()">
+            Clique aqui ❤️
+        </button>
+
+        <div class="final">
+            Feito com carinho para Aninha
+            <br>
+            ∞ para sempre
+        </div>
+
+    </div>
+
+    <script>
+        function mensagem() {
+            alert("Eu te amo, Aninha! ❤️");
+        }
+    </script>
+
+</body>
+</html>
